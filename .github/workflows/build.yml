@@ -22,7 +22,7 @@ jobs:
         run: go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
 
       - name: Build Caddy EXE
-        run: xcaddy build --replace github.com/caddy-dns/arvancloud=github.com/DaveTheBlazz/arvancloud@latest --output caddy.exe
+        run: xcaddy build --replace github.com/dashdagh8585-pixel/arvancloud@latest --output caddy.exe
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
